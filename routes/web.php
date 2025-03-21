@@ -1,10 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use app\Http\Controller\PostController;
 
 Route::get('/', function () {
     return view('home');
 });
 
-Route::post('/posts',[PostController::class, 'store']);
-Route::get('/posts',[PostController::class, 'index']);
